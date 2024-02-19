@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: employee_roles
@@ -9,6 +11,6 @@
 #
 require 'rails_helper'
 
-RSpec.describe EmployeeRole, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+RSpec.describe EmployeeRole do
+  it { is_expected.to validate_presence_of(:name) }
 end

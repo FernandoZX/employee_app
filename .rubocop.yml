@@ -16,6 +16,13 @@ AllCops:
     - 'tmp/**/*'
     - '.git/**/*'
     - 'bin/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'Rakefile'
+    - 'config.ru'
+    - 'lib/tasks/**/*'
+    - 'spec/rails_helper.rb'
+    - 'spec/spec_helper.rb'
   TargetRubyVersion: 2.7
   SuggestExtensions: false
 
@@ -204,4 +211,66 @@ Gemspec/DependencyVersion:
   Enabled: true
 
 Style/RequireOrder:
+  Enabled: true
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/project/**/*.rb
+
+RSpec/MultipleExpectations:
+  Max: 2
+
+# Enable our own pending cops.
+
+RSpec/BeEmpty:
+  Enabled: true
+RSpec/BeEq:
+  Enabled: true
+RSpec/BeNil:
+  Enabled: true
+RSpec/ChangeByZero:
+  Enabled: true
+RSpec/ClassCheck:
+  Enabled: true
+RSpec/ContainExactly:
+  Enabled: true
+RSpec/DuplicatedMetadata:
+  Enabled: true
+RSpec/EmptyMetadata:
+  Enabled: true
+RSpec/Eq:
+  Enabled: true
+RSpec/ExcessiveDocstringSpacing:
+  Enabled: true
+RSpec/IdenticalEqualityAssertion:
+  Enabled: true
+RSpec/IndexedLet:
+  Enabled: true
+RSpec/MatchArray:
+  Enabled: true
+RSpec/MetadataStyle:
+  Enabled: true
+RSpec/NoExpectationExample:
+  Enabled: true
+RSpec/PendingWithoutReason:
+  Enabled: true
+RSpec/ReceiveMessages:
+  Enabled: true
+RSpec/RedundantAround:
+  Enabled: true
+RSpec/RedundantPredicateMatcher:
+  Enabled: true
+RSpec/RemoveConst:
+  Enabled: true
+RSpec/RepeatedIncludeExample:
+  Enabled: true
+RSpec/SkipBlockInsideExample:
+  Enabled: true
+RSpec/SortMetadata:
+  Enabled: true
+RSpec/SpecFilePathSuffix:
+  Enabled: true
+RSpec/SubjectDeclaration:
+  Enabled: true
+RSpec/VerifiedDoubleReference:
   Enabled: true

@@ -29,6 +29,9 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    exceptions:
+      not_found: "%{model} not found with %{id}"
   helpers:
       submit:
         employee:
@@ -57,13 +60,12 @@ en:
         notice: 'Employee was successfully created.'
       update:
         notice: 'Employee was successfully updated.'
-      destroy:
-        notice: 'Employee was successfully removed.'
-    employee_role:
-      form:
-        create:
-          notice: 'Role was successfully created.'
-        update:
-          notice: 'Role was successfully updated.'
-        destroy:
-          notice: 'Role was successfully removed.'
+
+  employee_role:
+    form:
+      create:
+        notice: 'Role was successfully created.'
+      update:
+        notice: 'Role was successfully updated.'
+    destroy:
+      notice: 'Role was successfully removed.'

@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Employee Role Policy class
 class EmployeeRolePolicy < ApplicationPolicy
   class Scope < Scope
     # NOTE: Be explicit about which records you allow access to!

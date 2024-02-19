@@ -132,8 +132,13 @@ Install this project with:
 ```sh
   cd employee_crud
   bundle install
+  yarn install
 ```
 
+them build the css framework
+```sh
+  yarn build:css --watch
+```
 ### Usage
 
 To run the project, execute the following command:
@@ -141,7 +146,7 @@ To run the project, execute the following command:
 ```sh
   rails server
 ```
-
+or run with
 ```sh
   bin/dev
 ```
@@ -151,7 +156,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  rspec spec/
 ```
 
 ### Deployment

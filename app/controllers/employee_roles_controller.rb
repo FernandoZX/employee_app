@@ -28,7 +28,7 @@ class EmployeeRolesController < ApplicationController
       if @employee_role.save
         format.html do
           redirect_to employee_role_url(@employee_role),
-                      notice: 'Employee role was successfully created.'
+                      notice: t('employee_role.form.create.notice')
         end
         format.json { render :show, status: :created, location: @employee_role }
       else
@@ -44,7 +44,7 @@ class EmployeeRolesController < ApplicationController
       if @employee_role.update(employee_role_params)
         format.html do
           redirect_to employee_role_url(@employee_role),
-                      notice: 'Employee role was successfully updated.'
+                      notice: t('employee_role.form.update.notice')
         end
         format.json { render :show, status: :ok, location: @employee_role }
       else
@@ -60,7 +60,7 @@ class EmployeeRolesController < ApplicationController
 
     respond_to do |format|
       format.html do
-        redirect_to employee_roles_url, notice: 'Employee role was successfully destroyed.'
+        redirect_to employee_roles_url, notice: t('employee_role.destroy.notice')
       end
       format.json { head :no_content }
     end

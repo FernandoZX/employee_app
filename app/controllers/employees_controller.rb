@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# A controller who manages its own company employee data
 class EmployeesController < ApplicationController
   before_action :set_employee, only: %i[show edit update destroy]
 

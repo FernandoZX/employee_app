@@ -89,3 +89,5 @@ gem 'devise', '~> 4.9'
 
 gem 'action_policy'
 gem 'pundit', '~> 2.3'
+
+gem "dockerfile-rails", ">= 1.6", :group => :development

@@ -79,6 +79,6 @@ test:
 #
 production:
   <<: *default
-  database: employee_crud_production
+  database: employee-crud-db
   username: employee_crud
   password: <%= ENV["EMPLOYEE_CRUD_DATABASE_PASSWORD"] %>
